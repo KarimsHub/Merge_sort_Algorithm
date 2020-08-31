@@ -41,8 +41,8 @@ def merge_sort(unsorted_list, l = 0, r = None): # setting the default values for
     
     if l < r: # we only want the algorithm work if the left edge is smaller
         m = (l + r - 1) // 2 # defining the middle element of the list
-        merge_sort(unsorted_list, l, m) # using function to define the left part of the unsorted list
-        merge_sort(unsorted_list, m + 1, r) # using function to define the right part of the unsorted list
+        merge_sort(unsorted_list, l, m) # using function on the left part of the unsorted list
+        merge_sort(unsorted_list, m + 1, r) # using function on the right part of the unsorted list
         merge(unsorted_list, l, m, r) # using function to combine the parts 
 
 merge_sort(unsorted_l)
